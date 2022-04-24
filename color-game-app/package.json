@@ -1,5 +1,6 @@
 {
   "name": "color-game-app",
+  "homepage": "https://martynaskupsys.github.io/color-game/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
