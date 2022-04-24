@@ -65,7 +65,7 @@ export default function Container() {
       setModal(1);
     } else {
       setLifes((p) => p - 1);
-      setGuessed({ status: 0, message: "Bandykite dar karta!!" });
+      setGuessed({ status: 0, message: "Please Try Again!!" });
 
       setKvs((p) => {
         return [...p].map((el) => {

@@ -8,7 +8,7 @@ export default function Buttons({ generate, modas, text, lifes, setModal }) {
         </button>
       </div>
       <div className="result">
-        <div>Lifes left:</div>
+        <div>Lives left:</div>
         <h2>{lifes}</h2>
       </div>
 
