@@ -40,12 +40,13 @@
 .kvadratai {
   display: grid;
   grid-template-columns: 150px 150px 150px;
-  grid-template-rows: 150px 150px 150px;
+  grid-template-rows: 150px 150px;
   column-gap: 70px;
   row-gap: 70px;
   margin-top: 100px;
 }
 .flex-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,13 +56,14 @@
 .flex-container-buttons {
   display: flex;
   /* flex-direction: column; */
-  justify-content: space-around;
+  justify-content: space-between;
 
   width: 100%;
 }
 
 .kv:hover {
   opacity: 0.5;
+  cursor: pointer;
 }
 .kv {
   border-radius: 20px;
@@ -79,7 +81,7 @@ h1 {
   font-weight: bolder;
 }
 
-.btn {
+.btn-1 {
   width: 150px;
   height: 60px;
   font-size: 20px;
@@ -90,6 +92,7 @@ h1 {
 .change-mode {
   margin-top: 10px;
   margin-bottom: 10px;
+  min-width: 300px;
 }
 
 /* .btn-mode {
@@ -99,3 +102,42 @@ h1 {
 .btn-start {
   background-color: green;
 } */
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* .modalas-hide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #61dafb;
+  z-index: -5;
+} */
+
+.modalas-show {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* top: 0;
+  left: 0; */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.modalas-body {
+  background-color: rgb(40, 44, 52);
+  border-radius: 10px;
+  width: 50%;
+}
+
+.decoration {
+  color: aliceblue;
+  font-size: 30px;
+}
