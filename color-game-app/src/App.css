@@ -141,3 +141,7 @@ h1 {
   color: aliceblue;
   font-size: 30px;
 }
+
+.game-title {
+  font-size: 60px;
+}

@@ -61,7 +61,7 @@ export default function Container() {
   function guess(e) {
     const chosenColor = e.target.style.backgroundColor;
     if (guessing === chosenColor) {
-      setGuessed({ status: 1, message: "Atspejote!!" });
+      setGuessed({ status: 1, message: "YOU WON!! :D" });
       setModal(1);
     } else {
       setLifes((p) => p - 1);
@@ -81,7 +81,7 @@ export default function Container() {
 
   useEffect(() => {
     if (lifes === 0) {
-      setGuessed({ status: -1, message: "GAME OVER!!" });
+      setGuessed({ status: -1, message: "GAME OVER!! :(" });
       setModal(1);
     } else if (lifes === 3) {
       setGuessed({ status: 0, message: "" });
@@ -90,6 +90,7 @@ export default function Container() {
 
   return (
     <div className="flex-container">
+      <h2 className="game-title">Color Guessing Game</h2>
       <h1 style={status === 1 ? { backgroundColor: guessing } : { backgroundColor: "white" }}>
         {guessing}
       </h1>
